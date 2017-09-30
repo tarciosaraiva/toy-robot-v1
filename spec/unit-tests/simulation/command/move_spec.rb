@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'simulation/command/move'
 
 describe Simulation::Command::Move do

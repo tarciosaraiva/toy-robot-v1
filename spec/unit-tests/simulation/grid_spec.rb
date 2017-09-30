@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'simulation/grid'
 
 describe Simulation::Grid do

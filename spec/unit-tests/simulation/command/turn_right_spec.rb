@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'simulation/command/turn_right'
 
 describe Simulation::Command::TurnRight do

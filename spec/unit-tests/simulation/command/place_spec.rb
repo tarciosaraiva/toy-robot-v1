@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'simulation/command/place'
 
 describe Simulation::Command::Place do

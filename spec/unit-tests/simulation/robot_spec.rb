@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'simulation/grid'
 
 require 'simulation/direction'

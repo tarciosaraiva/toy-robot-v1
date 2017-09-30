@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'simulation/command/report'
 
 describe Simulation::Command::Report do

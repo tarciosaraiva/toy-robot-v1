@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'command_interpretor'
 
 describe CommandInterpretor do
