@@ -4,7 +4,7 @@ module Simulation
     SOUTH = "SOUTH"
     EAST  = "EAST"
     WEST  = "WEST"
-    
+
     def rotate_left_from(direction)
       case direction
       when NORTH
