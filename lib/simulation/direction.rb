@@ -50,5 +50,9 @@ module Simulation
         NORTH
       end
     end
+
+    def facing_direction_valid?(facing_direction)
+      facing_direction[/^(#{NORTH}|#{EAST}|#{WEST}|#{SOUTH}|#{NORTHEAST}|#{NORTHWEST}|#{SOUTHEAST}|#{SOUTHWEST})$/]
+    end
   end
 end

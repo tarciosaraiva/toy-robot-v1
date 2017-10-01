@@ -94,10 +94,6 @@ module Simulation
       y_coordinate >= @grid.maximum_south_bound && y_coordinate <= @grid.maximum_north_bound
     end
 
-    def facing_direction_valid?(facing_direction)
-      facing_direction[/^(#{Direction::NORTH}|#{Direction::EAST}|#{Direction::WEST}|#{Direction::SOUTH})$/]
-    end
-
     def next_move_valid?
       case facing_direction
       when Simulation::Direction::NORTH
