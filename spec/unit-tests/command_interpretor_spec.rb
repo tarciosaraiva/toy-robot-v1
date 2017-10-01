@@ -46,6 +46,36 @@ describe CommandInterpretor do
 
           it { is_expected.to eq('EAST') }
         end
+
+        context "as NORTHEAST" do
+          let(:direction) { "NORTHEAST" }
+
+          it { is_expected.to eq('NORTHEAST') }
+        end
+
+        context "as NORTHWEST" do
+          let(:direction) { "NORTHWEST" }
+
+          it { is_expected.to eq('NORTHWEST') }
+        end
+
+        context "as SOUTHEAST" do
+          let(:direction) { "SOUTHEAST" }
+
+          it { is_expected.to eq('SOUTHEAST') }
+        end
+
+        context "as SOUTHWEST" do
+          let(:direction) { "SOUTHWEST" }
+
+          it { is_expected.to eq('SOUTHWEST') }
+        end
+
+        context "as INVALID" do
+          let(:direction) { "INVALID" }
+
+          it { is_expected.to eq('INVALID') }
+        end
       end
     end
 
