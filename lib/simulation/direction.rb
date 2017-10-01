@@ -4,16 +4,28 @@ module Simulation
     SOUTH = "SOUTH"
     EAST  = "EAST"
     WEST  = "WEST"
+    NORTHEAST = "NORTHEAST"
+    SOUTHEAST = "SOUTHEAST"
+    NORTHWEST = "NORTHWEST"
+    SOUTHWEST = "SOUTHWEST"
 
     def rotate_left_from(direction)
       case direction
       when NORTH
+        NORTHWEST
+      when NORTHWEST
         WEST
       when WEST
+        SOUTHWEST
+      when SOUTHWEST
         SOUTH
       when SOUTH
+        SOUTHEAST
+      when SOUTHEAST
         EAST
       when EAST
+        NORTHEAST
+      when NORTHEAST
         NORTH
       end
     end
@@ -21,12 +33,20 @@ module Simulation
     def rotate_right_from(direction)
       case direction
       when NORTH
+        NORTHEAST
+      when NORTHEAST
         EAST
       when EAST
+        SOUTHEAST
+      when SOUTHEAST
         SOUTH
       when SOUTH
+        SOUTHWEST
+      when SOUTHWEST
         WEST
       when WEST
+        NORTHWEST
+      when NORTHWEST
         NORTH
       end
     end
