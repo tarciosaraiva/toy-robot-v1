@@ -12,7 +12,7 @@ module Simulation
     end
 
     def maximum_north_bound
-      @y_dimension_size
+      @y_dimension_size - 1
     end
 
     def maximum_south_bound
@@ -24,7 +24,15 @@ module Simulation
     end
 
     def maximum_east_bound
-      @x_dimension_size
+      @x_dimension_size - 1
+    end
+
+    def x_coordinate_within_bounds?(x_coordinate)
+      x_coordinate >= maximum_west_bound && x_coordinate <= maximum_east_bound
+    end
+
+    def y_coordinate_within_bounds?(y_coordinate)
+      y_coordinate >= maximum_south_bound && y_coordinate <= maximum_north_bound
     end
   end
 end

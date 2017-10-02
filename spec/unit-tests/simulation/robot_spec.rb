@@ -69,7 +69,7 @@ describe Simulation::Robot do
 
     context "when the given position is valid" do
       let(:x_coordinate) { 2 }
-      let(:y_coordinate) { 5 }
+      let(:y_coordinate) { 4 }
 
       it "places the robot" do
         subject.place(x_coordinate, y_coordinate, facing_direction)
@@ -100,7 +100,7 @@ describe Simulation::Robot do
 
       context "and can move in the NORTH direction" do
         let(:x_coordinate) { 2 }
-        let(:y_coordinate) { 4 }
+        let(:y_coordinate) { 3 }
         let(:facing_direction) { Simulation::Direction::NORTH }
 
         it "moves in that direction" do
@@ -191,14 +191,14 @@ describe Simulation::Robot do
 
       context "cannot move in the NORTH direction" do
         let(:x_coordinate) { 2 }
-        let(:y_coordinate) { 5 }
+        let(:y_coordinate) { 4 }
         let(:facing_direction) { Simulation::Direction::NORTH }
 
         it_behaves_like "cannot_move_with_current_direction"
       end
 
       context "cannot move in the EAST direction" do
-        let(:x_coordinate) { 5 }
+        let(:x_coordinate) { 4 }
         let(:y_coordinate) { 3 }
         let(:facing_direction) { Simulation::Direction::EAST }
 
@@ -206,7 +206,7 @@ describe Simulation::Robot do
       end
 
       context "cannot move in the SOUTH direction" do
-        let(:x_coordinate) { 5 }
+        let(:x_coordinate) { 4 }
         let(:y_coordinate) { 0 }
         let(:facing_direction) { Simulation::Direction::SOUTH }
 
@@ -240,7 +240,7 @@ describe Simulation::Robot do
 
     context "when robot is correctly placed" do
       let(:x_coordinate) { 2 }
-      let(:y_coordinate) { 5 }
+      let(:y_coordinate) { 4 }
 
 
       before(:each) do
@@ -314,7 +314,7 @@ describe Simulation::Robot do
 
     context "when the given position is valid" do
       let(:x_coordinate) { 2 }
-      let(:y_coordinate) { 5 }
+      let(:y_coordinate) { 4 }
 
 
       before(:each) do
@@ -375,7 +375,7 @@ describe Simulation::Robot do
 
     context "when robot is correctly placed" do
       let(:x_coordinate)     { 2 }
-      let(:y_coordinate)     { 5 }
+      let(:y_coordinate)     { 4 }
       let(:facing_direction) { Simulation::Direction::WEST }
       let(:valid_position)   { double('Valid Position', :to_s => position) }
 
